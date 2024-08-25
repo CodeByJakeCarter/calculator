@@ -21,3 +21,20 @@ const power = function (num1, num2) {
 const divide = function (...nums) {
   return nums.reduce((total, currentItem) => total / currentItem);
 };
+
+const primary = "";
+const secondary = "";
+const operator = "";
+
+const operate = function (primary, secondary, operator) {
+  switch (operator) {
+    case "*":
+      return multiply(primary, secondary);
+    case "+":
+      return add(primary, secondary);
+    case "/":
+      return divide(primary, secondary);
+    case "-":
+      return subtract(primary, secondary);
+  }
+};
