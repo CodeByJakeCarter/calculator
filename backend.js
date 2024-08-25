@@ -9,3 +9,11 @@ const subtract = function (...nums) {
 const multiply = function (nums) {
   return nums.reduce((total, currentItem) => total * currentItem, 1);
 };
+
+const power = function (num1, num2) {
+  const array = [];
+  for (let i = num2; i > 0; i--) {
+    array.push(num1);
+  }
+  return array.reduce((total, currentItem) => total * currentItem, 1);
+};
